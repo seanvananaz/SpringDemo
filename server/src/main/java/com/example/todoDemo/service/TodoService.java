@@ -17,7 +17,8 @@ public class TodoService {
     }
 
     public List<Todo> getTodos() {
-        return repository.findAll();
+//        return repository.findAll();
+        return repository.findAllByOrderByUpdatedAtDesc();
     }
 
     public Todo getTodoById(int id) {
@@ -30,12 +31,20 @@ public class TodoService {
 
     public String deleteTodo(int id) {
         repository.deleteById(id);
-        return "product removed! " + id;
+        return "Removed successfully! " + id;
     }
 
-    public Todo updateTodo(Todo todo) {
-        Todo existingTodo = repository.findById(todo.getId()).orElse(null);
-        existingTodo.setTitle(todo.getTitle());
+    public Todo updateTodo(int id, Todo todo) {
+        Todo existingTodo = repository.findById(id).orElse(null);
+        if(todo.getTitle() != null) {
+            existingTodo.setTitle(todo.getTitle());
+        }
+        if(todo.getDesc_ription() != null) {
+            existingTodo.setDesc_ription(todo.getDesc_ription());
+        }
+        if(todo.isIs_done() != existingTodo.isIs_done()) {
+            existingTodo.setIs_done(todo.isIs_done());
+        }
         return repository.save(existingTodo);
     }
 }

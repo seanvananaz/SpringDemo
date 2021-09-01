@@ -18,6 +18,7 @@ public class TodoController {
         return service.addTodo(todo);
     }
 
+//    @CrossOrigin(origins = "http://localhost:3000") - alternative if you dont make WebConfig for CORS ERROR
     @GetMapping("/todos")
     public List<Todo> getTodos() {
         return service.getTodos();
@@ -33,9 +34,9 @@ public class TodoController {
         return service.getTodoByTitle(title);
     }
 
-    @PutMapping("/edit")
-    public Todo updateTodo(@RequestBody Todo todo) {
-        return service.updateTodo(todo);
+    @PutMapping("/edit/{id}")
+    public Todo updateTodo(@PathVariable int id, @RequestBody Todo todo) {
+        return service.updateTodo(id, todo);
     }
 
     @DeleteMapping("/delete/{id}")
