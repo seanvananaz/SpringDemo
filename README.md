@@ -30,9 +30,13 @@ In this demo I used PhpMyAdmin to setup database
 | created_at   | datetime             | current_timestamp() |
 | updated_at   | datetime             |                     |
 
-3. users are found in User Accounts tab to create your own or use the default
-``
+3. users are found in User Accounts tab to create your own or use the default super user
+```
 username: admin
 password:
-``
+```
+## Built With
+* [React](https://reactjs.org) - A progressive JavaScript framework.
+* [Spring Boot](https://spring.io/projects/spring-boot) - Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
+* [Java](https://www.java.com/en/) - a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.
 
