@@ -31,8 +31,8 @@ In this demo I used PhpMyAdmin to setup database
 | updated_at   | datetime             |                     |
 
 3. users are found in User Accounts tab to create your own or use the default
-`
+``
 username: admin
 password:
-`
+``
 
