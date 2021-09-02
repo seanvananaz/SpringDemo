@@ -4,9 +4,12 @@
 </p>
 
 ## Requirements
+##### Server
 * Java 8 or later version
 * Maven / Gradle
 * MySQL
+##### Client
+* npm
 
 ## Getting Started on Server
 Prefered IDE Eclipse / IntelliJ it will automatically compile dependencies in maven and gradle when opening java project
@@ -35,6 +38,12 @@ In this demo I used PhpMyAdmin to setup database
 username: admin
 password:
 ```
+
+## Running Client Application
+1. make sure Spring Boot server is running
+2. go to `/client` and in your terminal `npm install` to install all the packages
+3. start React App `npm start`
+
 ## Built With
 * [React](https://reactjs.org) - A progressive JavaScript framework.
 * [Spring Boot](https://spring.io/projects/spring-boot) - Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
