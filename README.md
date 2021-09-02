@@ -20,6 +20,7 @@ Prefered IDE Eclipse / IntelliJ it will automatically compile dependencies in ma
 In this demo I used PhpMyAdmin to setup database
 1. Create new DB and name it `todo_db`
 2. Create Table named `todo`
+
 | Name         | Type                 | Extra               |
 |--------------|----------------------|---------------------|
 | id           | int                  | AUTO_INCREMENT      |
@@ -28,6 +29,7 @@ In this demo I used PhpMyAdmin to setup database
 | is_done      | tinyint              |                     |
 | created_at   | datetime             | current_timestamp() |
 | updated_at   | datetime             |                     |
+
 3. users are found in User Accounts tab to create your own or use the default
 ```
 username: admin
