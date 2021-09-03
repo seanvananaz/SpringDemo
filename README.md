@@ -13,7 +13,7 @@
 
 ## Getting Started on Server
 Prefered IDE Eclipse / IntelliJ it will automatically compile dependencies in maven and gradle when opening java project
-1. Open project with your IDE 
+1. Open project `/server` with your IDE 
 2. Wait for the project to compile all the dependencies before running
 3. build & Run project
 4. Check in your browser by requesting in this url: `localhost:8080/todos`
